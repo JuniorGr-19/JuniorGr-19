@@ -1,6 +1,6 @@
-icacls C:\inetpub\wwwroot\witlink_rf\storage /grant "IIS_IUSRS:(OI)(CI)M" /T
-mkdir C:\inetpub\wwwroot\witlink_rf\storage\descargas_toa
-mkdir C:\inetpub\wwwroot\witlink_rf\storage\fotos
+cmd //c "icacls C:\inetpub\wwwroot\witlink_rf\storage /grant IIS_IUSRS:(OI)(CI)M /T"
+
+mkdir -p /c/inetpub/wwwroot/witlink_rf/storage/descargas_toa /c/inetpub/wwwroot/witlink_rf/storage/fotos
 
 notepad witlink_rf/api/rf_diag.php
 
