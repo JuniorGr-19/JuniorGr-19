@@ -5,3 +5,7 @@ foreach (array('rf_fotos','rf_validacion_auto','rf_validacion_tecnico','rf_anali
   try { $db->exec('DELETE FROM '.$t); } catch (Exception $e) {}
 }
 echo "OK rf_sot=".$db->query('SELECT COUNT(*) FROM rf_sot')->fetchColumn()." rf_fotos=".$db->query('SELECT COUNT(*) FROM rf_fotos')->fetchColumn()."\n";
+
+notepad witlink_rf/tools/limpiar_rf_prueba.php
+
+rm -rf witlink_rf/storage/descargas_toa/* witlink_rf/storage/fotos/*
