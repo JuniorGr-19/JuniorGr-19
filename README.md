@@ -1,1 +1,3 @@
-git checkout origin/main -- sots/calidad.php sots/api_calidad_rf.php sots/assets/calidad.css witlink_rf/api/rf_recibir_fotos.php
+cd /c/inetpub/wwwroot
+git fetch origin
+git checkout origin/main -- witlink_rf/src/rf/SedeMap.php
