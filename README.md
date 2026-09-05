@@ -1,1 +1,1 @@
-git fetch origin && git checkout origin/main -- contratos/app/lib/plantillas_contrato.php
+which mysql || ls "/c/Program Files/MySQL/MySQL Server 8.0/bin/mysql.exe" "/c/Program Files/MySQL/MySQL Server 5.7/bin/mysql.exe" /c/xampp/mysql/bin/mysql.exe /c/wamp64/bin/mysql/*/bin/mysql.exe 2>/dev/null
