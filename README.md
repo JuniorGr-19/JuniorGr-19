@@ -1,1 +1,1 @@
-git fetch origin && git checkout origin/main -- sots/calidad.php sots/api_calidad_rf.php sots/assets/calidad.css
+git fetch origin && git checkout origin/main -- contratos/admin/api_plantillas_contrato.php contratos/admin/gestion.php contratos/app/lib/plantillas_contrato.php
