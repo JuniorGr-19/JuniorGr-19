@@ -1,1 +1,1 @@
-U=$(grep '^DB_USER=' /c/inetpub/wwwroot/witlink_rf/.env | head -1 | cut -d= -f2- | tr -d ' "'); N=$(grep '^DB_NAME=' /c/inetpub/wwwroot/witlink_rf/.env | head -1 | cut -d= -f2- | tr -d ' "'); P=$(grep '^DB_PASS=' /c/inetpub/wwwroot/witlink_rf/.env | head -1 | cut -d= -f2- | tr -d ' "'); "/c/Program Files/MySQL/MySQL Server 8.0/bin/mysql.exe" -u "$U" -p"$P" --database="$N" -e "SELECT codigo_circular, property_label FROM rf_fotos WHERE rf_sot_id = 761;"
+git fetch origin && git checkout origin/main -- witlink_rf/src/rf/GeminiAnalyzer.php witlink_rf/src/rf/CsvToaImporter.php
