@@ -1,1 +1,3 @@
 "/c/Program Files/MySQL/MySQL Server 8.0/bin/mysql.exe" -u root -p --database=witlink_rf -e "SELECT id, sot, fecha, tipo_trabajo, sub_tipo, estado_sot, sede, cantidad_repetidores, tecnico FROM rf_sot WHERE sot = '90532026';"
+Alonzo159753....
+E7y/tWzMItXq2NX
