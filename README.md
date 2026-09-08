@@ -1,3 +1,3 @@
-cd /c/inetpub/wwwroot
-git fetch origin
-git checkout origin/main -- witlink_rf/src/rf/CsvToaImporter.php witlink_rf/api/rf_conteo.php witlink_rf/tools/limpiar_rf_todo.php
+cat > /c/inetpub/wwwroot/witlink_rf/storage/csv_force.json << 'EOF'
+{"at":"2026-09-08T17:45:00-05:00","motivo":"wipe","done":["WITLINK ANCASH"]}
+EOF
