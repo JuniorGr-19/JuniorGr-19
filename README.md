@@ -1,3 +1,2 @@
-cd C:\inetpub\wwwroot
-git fetch origin
-git checkout origin/main -- contratos/admin/planilla_arriendo.php contratos/admin/planilla_arriendo_arrendadores.php contratos/admin/planilla_arriendo_exportar.php contratos/admin/planilla_arriendo_guardar.php contratos/app/lib/planilla_arriendo.php contratos/assets/planilla-arriendo.css contratos/assets/planilla-arriendo.js
+P=$(grep "\$pass =" /c/inetpub/wwwroot/contratos/app/config/database.php | head -1 | sed "s/.*'\(.*\)'.*/\1/")
+"/c/Program Files/MySQL/MySQL Server 8.0/bin/mysql.exe" -u root -p"$P" --database=sistema -e "SET FOREIGN_KEY_CHECKS=0; TRUNCATE TABLE contratos_arriendo_mes; TRUNCATE TABLE contratos_arriendo_item; TRUNCATE TABLE contratos_arriendo_arrendador; SET FOREIGN_KEY_CHECKS=1; SELECT 'arrendador' t, COUNT(*) n FROM contratos_arriendo_arrendador UNION ALL SELECT 'item', COUNT(*) FROM contratos_arriendo_item UNION ALL SELECT 'mes', COUNT(*) FROM contratos_arriendo_mes;"
