@@ -1,7 +1,7 @@
 cd /c/inetpub/wwwroot
 git fetch origin
 git checkout origin/main -- \
-  sots/app/prog_csv_bot_lib.php \
-  sots/api_prog_importar_csv_bot.php \
-  sots/api_prog_bot_tick.php \
-  sots/programacion.php
+  witlink_rf/tools/borrar_rf_fecha.php \
+  sots/tools/borrar_prog_fecha.php
+php witlink_rf/tools/borrar_rf_fecha.php 2026-09-14
+php sots/tools/borrar_prog_fecha.php 2026-09-14
