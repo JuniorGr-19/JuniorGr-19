@@ -1,4 +1,14 @@
-cd C:\inetpub\wwwroot
+cd /c/inetpub/wwwroot
 git fetch origin
-git checkout origin/main -- sots/api_prog_importar_csv_bot.php sots/app/prog_csv_bot_lib.php sots/app/prog_import_csv_lib.php sots/tools/borrar_prog_fecha.php witlink_rf/tools/limpiar_rf_todo.php
+git checkout origin/main -- \
+  sots/programacion.php \
+  sots/app/prog_bolsa_lib.php \
+  sots/api_prog_bolsa_upload.php \
+  sots/api_prog_bolsa_grupos.php \
+  sots/partials/prog_bolsa_modal.php \
+  sots/assets/prog_bolsa.js \
+  sots/uploads/bolsa/.gitkeep \
+  sots/uploads/bolsa/.htaccess \
+  sots/uploads/bolsa/web.config
+mkdir -p sots/uploads/bolsa
 git status --short
