@@ -1,7 +1,3 @@
 cd /c/inetpub/wwwroot
 git fetch origin
-git checkout origin/main -- sots/programacion.php sots/app/prog_bolsa_lib.php sots/api_prog_bolsa_upload.php sots/api_prog_bolsa_grupos.php sots/api_prog_bolsa_borrar.php sots/partials/prog_bolsa_modal.php sots/assets/prog_bolsa.js sots/tools/borrar_bolsa_fecha.php sots/uploads/bolsa/.gitkeep sots/uploads/bolsa/.htaccess sots/uploads/bolsa/web.config
-
-cd /c/inetpub/wwwroot
-cd sots/tools
-php borrar_bolsa_fecha.php 2026-09-15
+git checkout origin/main -- sots/programacion.php sots/partials/prog_bolsa_modal.php sots/assets/prog_bolsa.js
